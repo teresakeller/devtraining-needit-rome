@@ -26,8 +26,8 @@
       },
       "overrides" : {
         "composition" : [ {
-          "elementId" : "page_logo",
-          "elementLabel" : "Page Logo",
+          "elementId" : "image_1",
+          "elementLabel" : "Image 1",
           "propertyValues" : {
             "alt" : {
               "type" : "TRANSLATION_LITERAL",
@@ -38,7 +38,7 @@
             },
             "src" : {
               "type" : "JSON_LITERAL",
-              "value" : "needit-logo-blue.png"
+              "value" : "needit-logo-green.png"
             },
             "fit" : {
               "type" : "JSON_LITERAL",
@@ -69,8 +69,8 @@
             "width" : "125px"
           }
         }, {
-          "elementId" : "page_title",
-          "elementLabel" : "Page Title",
+          "elementId" : "stylized_text_1",
+          "elementLabel" : "Stylized text 1",
           "propertyValues" : {
             "text" : {
               "type" : "TRANSLATION_LITERAL",
@@ -142,72 +142,7 @@
   "isNonDestructive" : false,
   "styles" : {
     "width" : "100%",
-    "background-color" : "#6295A3"
-  }
-}, {
-  "elementId" : "next_needit_row",
-  "elementLabel" : "Next NeedIt Row",
-  "propertyValues" : { },
-  "eventMappings" : [ ],
-  "slot" : "Main",
-  "definition" : {
-    "id" : "d356d14b6e293a3020a244b63d278d8f",
-    "type" : "MACROPONENT"
-  },
-  "overrides" : {
-    "composition" : [ {
-      "elementId" : "next_needit",
-      "elementLabel" : "Next NeedIt",
-      "propertyValues" : { },
-      "eventMappings" : [ ],
-      "slot" : "Main",
-      "definition" : {
-        "id" : "d356d14b6e293a3020a244b63d278d8f",
-        "type" : "MACROPONENT"
-      },
-      "overrides" : {
-        "composition" : [ ],
-        "layout" : {
-          "default" : {
-            "children" : null,
-            "items" : [{"slotName":"Main","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"column"}}],
-            "root" : null,
-            "rules" : {"flex-flow":"row nowrap","align-items":"stretch","height":"100%"},
-            "styles" : null,
-            "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
-            "type" : "flex"
-          }
-        }
-      },
-      "isHidden" : {
-        "type" : "JSON_LITERAL",
-        "value" : ""
-      },
-      "isNonDestructive" : false,
-      "styles" : {
-        "width" : "90%"
-      }
-    } ],
-    "layout" : {
-      "default" : {
-        "children" : null,
-        "items" : [{"slotName":"Main","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"column","align-items":"center"}}],
-        "root" : null,
-        "rules" : {"flex-flow":"row nowrap","align-items":"stretch","height":"100%"},
-        "styles" : null,
-        "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
-        "type" : "flex"
-      }
-    }
-  },
-  "isHidden" : {
-    "type" : "JSON_LITERAL",
-    "value" : ""
-  },
-  "isNonDestructive" : false,
-  "styles" : {
-    "width" : "100%",
-    "background-color" : "#A5C7D0"
+    "background-color" : "#81B5A1"
   }
 }, {
   "elementId" : "reports_row",
@@ -232,8 +167,8 @@
       },
       "overrides" : {
         "composition" : [ {
-          "elementId" : "overdue_needits_score",
-          "elementLabel" : "Overdue NeedIts Score",
+          "elementId" : "data_visualization_1",
+          "elementLabel" : "Data visualization 1",
           "propertyValues" : {
             "label" : {
               "type" : "TRANSLATION_LITERAL",
@@ -301,51 +236,7 @@
               "value" : null
             }
           },
-          "eventMappings" : [ {
-            "eventMappingId" : "ckyezfpddiiaaaaaanddiihhvhhgofqiccc",
-            "isConfiguration" : false,
-            "offRowStorageId" : null,
-            "sourceEventApiName" : "sn_uxf_viz_connect.NOW_UXF_VIS_CONNECTED#ITEM_SELECTED",
-            "sourceEventCorrelationId" : null,
-            "sourceEventDefinition" : {
-              "apiName" : "sn_uxf_viz_connect.NOW_UXF_VIS_CONNECTED#ITEM_SELECTED",
-              "id" : null,
-              "type" : "UXEVENT"
-            },
-            "sourceEventSysId" : null,
-            "targets" : [ {
-              "broker" : null,
-              "clientScript" : null,
-              "declarativeAction" : null,
-              "event" : {
-                "apiName" : "x_58872_needit.NAV_ITEM_SELECTED_RELAY_223f9e631b46f41068dd5464604bcb2a",
-                "payload" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : {
-                    "route" : "simple-list",
-                    "fields" : {
-                      "table" : "x_58872_needit_needit"
-                    },
-                    "params" : {
-                      "listTitle" : "Overdue NeedIts",
-                      "listView" : "Experience_list",
-                      "query" : "https://dev85328.service-now.com/x_58872_needit_needit_list.do?sysparm_query=active%3Dtrue%5Eu_when_needed%3Cjavascript%3Ags.beginningOfToday()&amp;sysparm_view="
-                    },
-                    "redirect" : null,
-                    "passiveNavigation" : null,
-                    "title" : null,
-                    "multiInstField" : null,
-                    "targetRoute" : null,
-                    "external" : null
-                  }
-                },
-                "sysId" : "f318b7a1878541107a0ccaaf8bbb354d"
-              },
-              "operation" : null,
-              "targetId" : "ckyezfpddiiaaaaaaoddiihhvjrccchhiirj",
-              "type" : "EVENT"
-            } ]
-          } ],
+          "eventMappings" : [ ],
           "slot" : "Column 1",
           "definition" : {
             "id" : "67cf18a377c70010cb834a2a6910619a",
@@ -359,8 +250,8 @@
           "isNonDestructive" : false,
           "styles" : { }
         }, {
-          "elementId" : "active_needits_pie",
-          "elementLabel" : "Active NeedIts Pie",
+          "elementId" : "data_visualization_2",
+          "elementLabel" : "Data visualization 2",
           "propertyValues" : {
             "label" : {
               "type" : "TRANSLATION_LITERAL",
@@ -428,96 +319,7 @@
               "value" : null
             }
           },
-          "eventMappings" : [ {
-            "eventMappingId" : "ckyezleebbfaaaabbpddiihhvqydnhhqlh",
-            "isConfiguration" : false,
-            "offRowStorageId" : null,
-            "sourceEventApiName" : "sn_uxf_viz_connect.NOW_UXF_VIS_CONNECTED#ITEM_SELECTED",
-            "sourceEventCorrelationId" : null,
-            "sourceEventDefinition" : {
-              "apiName" : "sn_uxf_viz_connect.NOW_UXF_VIS_CONNECTED#ITEM_SELECTED",
-              "id" : null,
-              "type" : "UXEVENT"
-            },
-            "sourceEventSysId" : null,
-            "targets" : [ {
-              "broker" : null,
-              "clientScript" : null,
-              "declarativeAction" : null,
-              "event" : {
-                "apiName" : "x_58872_needit.NAV_ITEM_SELECTED_RELAY_223f9e631b46f41068dd5464604bcb2a",
-                "payload" : {
-                  "type" : "MAP_CONTAINER",
-                  "container" : {
-                    "route" : {
-                      "type" : "JSON_LITERAL",
-                      "value" : "simple-list"
-                    },
-                    "fields" : {
-                      "type" : "MAP_CONTAINER",
-                      "container" : {
-                        "table" : {
-                          "type" : "EVENT_PAYLOAD_BINDING",
-                          "binding" : {
-                            "address" : [ "params", "table" ]
-                          }
-                        }
-                      }
-                    },
-                    "params" : {
-                      "type" : "MAP_CONTAINER",
-                      "container" : {
-                        "listTitle" : {
-                          "type" : "EVENT_PAYLOAD_BINDING",
-                          "binding" : {
-                            "address" : [ "title" ]
-                          }
-                        },
-                        "query" : {
-                          "type" : "EVENT_PAYLOAD_BINDING",
-                          "binding" : {
-                            "address" : [ "params", "query" ]
-                          }
-                        },
-                        "listView" : {
-                          "type" : "JSON_LITERAL",
-                          "value" : "Experience_list"
-                        }
-                      }
-                    },
-                    "redirect" : {
-                      "type" : "JSON_LITERAL",
-                      "value" : null
-                    },
-                    "passiveNavigation" : {
-                      "type" : "JSON_LITERAL",
-                      "value" : null
-                    },
-                    "title" : {
-                      "type" : "JSON_LITERAL",
-                      "value" : null
-                    },
-                    "multiInstField" : {
-                      "type" : "JSON_LITERAL",
-                      "value" : null
-                    },
-                    "targetRoute" : {
-                      "type" : "JSON_LITERAL",
-                      "value" : null
-                    },
-                    "external" : {
-                      "type" : "JSON_LITERAL",
-                      "value" : null
-                    }
-                  }
-                },
-                "sysId" : "f318b7a1878541107a0ccaaf8bbb354d"
-              },
-              "operation" : null,
-              "targetId" : "ckyezleebbfaaaabbqddiihhvbbcsuhhdgbb",
-              "type" : "EVENT"
-            } ]
-          } ],
+          "eventMappings" : [ ],
           "slot" : "Column 2",
           "definition" : {
             "id" : "67cf18a377c70010cb834a2a6910619a",
@@ -531,8 +333,8 @@
           "isNonDestructive" : false,
           "styles" : { }
         }, {
-          "elementId" : "needits_this_month_score",
-          "elementLabel" : "NeedIts This Month Score",
+          "elementId" : "data_visualization_3",
+          "elementLabel" : "Data visualization 3",
           "propertyValues" : {
             "label" : {
               "type" : "TRANSLATION_LITERAL",
@@ -655,7 +457,7 @@
   "isNonDestructive" : false,
   "styles" : {
     "width" : "100%",
-    "background-color" : "#A5C7D0"
+    "background-color" : "#B3D4C7"
   }
 }, {
   "elementId" : "list_row",
@@ -680,8 +482,8 @@
       },
       "overrides" : {
         "composition" : [ {
-          "elementId" : "all_active_needits_list",
-          "elementLabel" : "All Active NeedIts List",
+          "elementId" : "list__simple_1",
+          "elementLabel" : "List - Simple 1",
           "propertyValues" : {
             "listTitle" : {
               "type" : "TRANSLATION_LITERAL",
@@ -919,7 +721,120 @@
             }
           },
           "eventMappings" : [ {
-            "eventMappingId" : "ckykiiddenraaaabbffddiihhvccwigggddiij",
+            "eventMappingId" : "ckykltccnzaaaaccqddiihhvrgjxlifff",
+            "isConfiguration" : false,
+            "offRowStorageId" : null,
+            "sourceEventApiName" : "sn_record_list_con.NOW_RECORD_LIST_CONNECTED#VIEW_ALL_CLICKED",
+            "sourceEventCorrelationId" : null,
+            "sourceEventDefinition" : {
+              "apiName" : "sn_record_list_con.NOW_RECORD_LIST_CONNECTED#VIEW_ALL_CLICKED",
+              "id" : null,
+              "type" : "UXEVENT"
+            },
+            "sourceEventSysId" : null,
+            "targets" : [ {
+              "broker" : null,
+              "clientScript" : null,
+              "declarativeAction" : null,
+              "event" : {
+                "apiName" : "x_58872_needit.NAV_ITEM_SELECTED_RELAY_4f08404b874501107a0ccaaf8bbb3531",
+                "payload" : {
+                  "type" : "MAP_CONTAINER",
+                  "container" : {
+                    "route" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : "simple-list"
+                    },
+                    "fields" : {
+                      "type" : "MAP_CONTAINER",
+                      "container" : {
+                        "table" : {
+                          "type" : "EVENT_PAYLOAD_BINDING",
+                          "binding" : {
+                            "address" : [ "table" ]
+                          }
+                        }
+                      }
+                    },
+                    "params" : {
+                      "type" : "MAP_CONTAINER",
+                      "container" : {
+                        "listTitle" : {
+                          "type" : "EVENT_PAYLOAD_BINDING",
+                          "binding" : {
+                            "address" : [ "listTitle" ]
+                          }
+                        },
+                        "query" : {
+                          "type" : "EVENT_PAYLOAD_BINDING",
+                          "binding" : {
+                            "address" : [ "query" ]
+                          }
+                        }
+                      }
+                    },
+                    "redirect" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "passiveNavigation" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "title" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "multiInstField" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "targetRoute" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "external" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    }
+                  }
+                },
+                "sysId" : "e9484087874501107a0ccaaf8bbb35e2"
+              },
+              "operation" : null,
+              "targetId" : "ckykltccnzaaaaccrddiihhvawqolubk",
+              "type" : "EVENT"
+            } ]
+          }, {
+            "eventMappingId" : "ckyklstpjaaaaccgddiihhvjaeepufnx",
+            "isConfiguration" : false,
+            "offRowStorageId" : null,
+            "sourceEventApiName" : "sn_record_list_con.NOW_RECORD_LIST_CONNECTED#DATA_FETCH_REQUESTED",
+            "sourceEventCorrelationId" : null,
+            "sourceEventDefinition" : {
+              "apiName" : "sn_record_list_con.NOW_RECORD_LIST_CONNECTED#DATA_FETCH_REQUESTED",
+              "id" : null,
+              "type" : "UXEVENT"
+            },
+            "sourceEventSysId" : null,
+            "targets" : [ {
+              "broker" : null,
+              "clientScript" : null,
+              "declarativeAction" : null,
+              "event" : {
+                "apiName" : "sn_uxf_page.NOW_UXF_PAGE#CLEAR_NOTIFICATIONS",
+                "payload" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : { }
+                },
+                "sysId" : "e1270f814da9399ec7c51a2cf36ecfa8"
+              },
+              "operation" : null,
+              "targetId" : "ckyklstpjaaaacchddiihhvhbccormeaa",
+              "type" : "EVENT"
+            } ]
+          }, {
+            "eventMappingId" : "ckykiilwzaaaaggffddiiiigglgaagggedddd",
             "isConfiguration" : false,
             "offRowStorageId" : null,
             "sourceEventApiName" : "sn_record_list_con.NOW_RECORD_LIST_CONNECTED#DATA_FETCH_SUCCEEDED",
@@ -937,27 +852,20 @@
               "event" : {
                 "apiName" : "sn_uxf_page.NOW_UXF_PAGE#ADD_NOTIFICATIONS",
                 "payload" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : {
-                    "items" : [ {
-                      "content" : {
-                        "type" : "html",
-                        "value" : "&lt;span&gt;&lt;em&gt;NeedIt&lt;/em&gt; records were fetched successfully.&lt;/span&gt;"
-                      },
-                      "action" : {
-                        "type" : "dismiss"
-                      }
-                    } ]
+                  "type" : "CLIENT_TRANSFORM_SCRIPT",
+                  "script" : {
+                    "apiVersion" : "1.0.0",
+                    "inlineScript" : "/**\n * @param {params} params\n * @param {api} params.api\n * @param {any} params.event\n * @param {any} params.imports\n */\nfunction evaluateEvent({\n    api,\n    event\n}) {\n\n    // Get the query value from the payload\n    var payloadQuery = event.payload.query;\n\n    return {\n        items: [{\n            \"content\": {\n                \"type\": \"html\",\n                \"value\": \"&lt;span&gt;&lt;em&gt;NeedIt&lt;/em&gt; records were fetched successfully with query &lt;strong&gt;\" + payloadQuery + \"&lt;/strong&gt;.&lt;/span&gt;\"\n            },\n            \"action\": {\n                \"type\": \"dismiss\"\n            }\n        }]\n    };\n}"
                   }
                 },
                 "sysId" : "49fe7d575f983bb3f8eea3fa8d40694c"
               },
               "operation" : null,
-              "targetId" : "ckykiiddenraaaabbggddiihhvxgjjnbsccii",
+              "targetId" : "ckykiilwzaaaaggggddiiiiggzdiccarod",
               "type" : "EVENT"
             } ]
           }, {
-            "eventMappingId" : "ckyfaaffdljaaaajjaaddiihhvshkccrnkb",
+            "eventMappingId" : "ckyfaaccnddjjaaaaggaddiihhvxgbbnwgvdd",
             "isConfiguration" : false,
             "offRowStorageId" : null,
             "sourceEventApiName" : "sn_record_list_con.NOW_RECORD_LIST_CONNECTED#ROW_CLICKED",
@@ -973,7 +881,7 @@
               "clientScript" : null,
               "declarativeAction" : null,
               "event" : {
-                "apiName" : "x_58872_needit.NAV_ITEM_SELECTED_RELAY_223f9e631b46f41068dd5464604bcb2a",
+                "apiName" : "x_58872_needit.NAV_ITEM_SELECTED_RELAY_4f08404b874501107a0ccaaf8bbb3531",
                 "payload" : {
                   "type" : "MAP_CONTAINER",
                   "container" : {
@@ -987,7 +895,7 @@
                         "table" : {
                           "type" : "EVENT_PAYLOAD_BINDING",
                           "binding" : {
-                            "address" : [ "table" ]
+                            "address" : [ "listTable" ]
                           }
                         },
                         "sysId" : {
@@ -1028,10 +936,10 @@
                     }
                   }
                 },
-                "sysId" : "f318b7a1878541107a0ccaaf8bbb354d"
+                "sysId" : "e9484087874501107a0ccaaf8bbb35e2"
               },
               "operation" : null,
-              "targetId" : "ckyfaaffdljaaaajjbbddiihhvilsffddcem",
+              "targetId" : "ckyfaaccnddjjaaaaggbddiihhvleerhhjqli",
               "type" : "EVENT"
             } ]
           } ],
@@ -1092,7 +1000,7 @@
 } ]</composition>
         <da_relay_models/>
         <data>[ ]</data>
-        <dispatched_events>f318b7a1878541107a0ccaaf8bbb354d</dispatched_events>
+        <dispatched_events>e9484087874501107a0ccaaf8bbb35e2,a0abf7e5878541107a0ccaaf8bbb352f</dispatched_events>
         <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
         <handled_events/>
         <interactions/>
@@ -1138,15 +1046,15 @@
         <state_properties>[ ]</state_properties>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2021-08-24 18:11:54</sys_created_on>
-        <sys_id>223f9e631b46f41068dd5464604bcb2a</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_created_on>2022-01-18 21:02:47</sys_created_on>
+        <sys_id>4f08404b874501107a0ccaaf8bbb3531</sys_id>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Home</sys_name>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
         <sys_policy/>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
-        <sys_update_name>sys_ux_macroponent_223f9e631b46f41068dd5464604bcb2a</sys_update_name>
+        <sys_update_name>sys_ux_macroponent_4f08404b874501107a0ccaaf8bbb3531</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-01-18 17:12:11</sys_updated_on>
+        <sys_updated_on>2022-01-18 21:04:17</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>
